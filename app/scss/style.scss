@@ -41,10 +41,12 @@ $black:#070707;
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size:18px;
+	min-width: 970px ;
 }
 
 .container{
-   max-width: 950px;
+	padding: 0 10px;
+   max-width: 970px;
 	margin: 0 auto;
 }
 
@@ -57,13 +59,14 @@ body{
 
 	&__container{
 		border-bottom: 1px solid #828282;
-		padding:33px 0 33px 0 ;
+		padding:33px 20px;
 		// margin-bottom: 3px;
 	}
 
 	ul{
 		display:flex;
 		justify-content: space-between;
+		flex: 0 0 20%;
 		align-items: center;
 	}
 	
