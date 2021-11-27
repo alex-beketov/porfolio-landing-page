@@ -41,13 +41,14 @@ $black:#070707;
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size:18px;
-	min-width: 970px ;
+	height: auto;
+	position: relative;
 }
 
 .container{
-	padding: 0 10px;
-   max-width: 970px;
+   max-width: 950px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 .header{
@@ -59,15 +60,17 @@ body{
 
 	&__container{
 		border-bottom: 1px solid #828282;
-		padding:33px 20px;
+		// padding:33px 0 33px 0 ;
 		// margin-bottom: 3px;
+		padding-top: 33px;
+		padding-bottom: 33px;
 	}
 
 	ul{
 		display:flex;
 		justify-content: space-between;
-		flex: 0 0 20%;
 		align-items: center;
+		flex: 0 0 20%;
 	}
 	
 	&__link{
@@ -188,6 +191,7 @@ body{
 		display: flex;
 		align-items: stretch;
 		justify-content: space-evenly;
+		flex-wrap: wrap;
 		flex: 0 0 25%;
 		margin: 44px 0 0 0;
 	}
@@ -240,6 +244,7 @@ body{
 		img{
 			display: block;
 			margin-bottom: 45px;
+			max-width: 100%;
 		}
 	}
 
@@ -249,6 +254,10 @@ body{
 }
 
 .contacts {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
 	padding: 115px 0 80px 0;
 	text-align: center;
 
@@ -295,3 +304,6 @@ body{
 		margin-bottom: 20px;
 	}
 }
+
+
+@import "adaptive.scss";
