@@ -41,6 +41,7 @@ $black:#070707;
 body{
 	font-family: 'Roboto', sans-serif;
 	font-size:18px;
+	scroll-behavior: smooth;
 	height: auto;
 	position: relative;
 }
@@ -143,6 +144,10 @@ body{
 		img{
 			max-width: 100%;
 		}
+	}
+
+	&__invisible{
+		display: none;
 	}
 }
 

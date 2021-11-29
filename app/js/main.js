@@ -19,20 +19,3 @@ Array.from(headerLinks).forEach((headerLink) => {
    });   
 })
 
-// Array.from(headerAnchor).forEach((headerAnchor) => {
-//    headerAnchor.addEventListener('click', function(event){
-//       event.preventDefault();
-//       const coordinates = headerAnchor.getAttribute('href');
-//       document.querySelector(coordinates).scrollIntoView({
-//          behavior:"smooth",
-//          block:'start'
-//       })
-//    })
-// })
-
-// setTimeout(() => {window.scrollTo(0, document.querySelector('#Skills').offsetTop - document.querySelector('.header').clientHeight)}, 1000)
-
-setTimeout(() => {document.querySelector('#Portfolio').scrollIntoView({
-   block:'start',
-   behavior:'smooth'
-})}, 1000)

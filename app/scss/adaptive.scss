@@ -165,5 +165,24 @@
 }
 
 @media(max-width: 320px) {
+   .person{
+      &__info{
+         flex-wrap: wrap;
+      }
+      &__name{
+         flex-basis: 100%;
+      }
+      &__career{
+         margin-bottom: 36px;
+      }
 
+      &__visible{
+         display: none;
+      }
+
+      &__invisible{
+         display: block;
+         width: 100%;
+      }
+   }
 }
