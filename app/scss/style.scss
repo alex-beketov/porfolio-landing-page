@@ -218,6 +218,12 @@ body{
 		flex-direction: column;
 		justify-content: space-between;
 		align-items:center;
+		transition-duration: 0.5s;
+
+		&:hover{
+			transform: translate(5px, -5px);
+			// box-shadow: 5px 5px 15px$black;
+		}
 	}
 
 	&__stars{
@@ -243,6 +249,11 @@ body{
 			font-size: 18px;
 			line-height: 22px;
 			text-decoration: underline;
+			transition-duration: 0.3s;
+
+			&:hover{
+				color: #828282;
+			}
 		}
 
 		img{
@@ -285,6 +296,13 @@ body{
 		font-weight: 700;
 		padding: 10px 30px;
 		border-radius:	20px;
+		transition-duration: 0.5s;
+
+		&:hover{
+			color: $black;
+			background-color: #fff;
+			box-shadow: 6px 2px 5px #8a8a8a;
+		}
 	}
 
 	&__links{
@@ -295,13 +313,27 @@ body{
 	}
 
 	&__icon{
+		transition: 0.5s;
 
+		&:hover{
+			transform: translate(5px, -5px);
+		}
 	}
 
 	&__appeal{
 		font-size: 14px;
 		line-height: 17px;
 		color: #828282;
+
+		a{
+			color: inherit;
+			transition: 0.3s;
+
+			&:hover{
+				text-decoration:underline;
+				color: $black;
+			}
+		}
 	}
 
 	&__title{
