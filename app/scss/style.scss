@@ -348,3 +348,28 @@ body{
 
 
 @import "adaptive.scss";
+
+
+.element-animation {
+  margin: 2rem 0;
+  font-size: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1.5s;
+  transform: translateY(0%);
+}
+
+.photo-animation{
+	opacity: 0;
+	transform: translateX(-100px);
+}
+
+.photo-animation.element-show{
+	opacity: 1;
+	transition: 2s;
+	transform: translateX(0%);
+}

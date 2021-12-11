@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,36 +10,37 @@
    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
    <title>Document</title>
    <link rel="stylesheet" href="css/style.min.css">
-   </head>
+</head>
+
 <body>
    <header class="header">
       <div class="container header__container">
          <div class="header__burger">
             <span></span>
          </div>
-            <nav class="header__nav">
-               <ul>
-                  <li class="header__link header__link_active">
-                     <a class="header__anchor" href="#Home">Home</a>
-                  </li>
-                  <li class="header__link">
-                     <a class="header__anchor" href="#About">About me</a>
-                  </li>
-                  <li class="header__link">
-                     <a class="header__anchor" href="#Skills">Skills</a>
-                  </li>
-                  <li class="header__link">
-                     <a class="header__anchor" href="#Portfolio">Portfolio</a>
-                  </li>
-                  <li class="header__link">
-                     <a class="header__anchor" href="#Contacts">Contacts</a>
-                  </li>
-               </ul>
-            </nav>
+         <nav class="header__nav">
+            <ul>
+               <li class="header__link header__link_active">
+                  <a class="header__anchor" href="#Home">Home</a>
+               </li>
+               <li class="header__link">
+                  <a class="header__anchor" href="#About">About me</a>
+               </li>
+               <li class="header__link">
+                  <a class="header__anchor" href="#Skills">Skills</a>
+               </li>
+               <li class="header__link">
+                  <a class="header__anchor" href="#Portfolio">Portfolio</a>
+               </li>
+               <li class="header__link">
+                  <a class="header__anchor" href="#Contacts">Contacts</a>
+               </li>
+            </ul>
+         </nav>
       </div>
    </header>
    <main class="main">
-      <section class="person" id="Home">
+      <section class="person element-animation" id="Home">
          <div class="container">
             <div class="person__info">
                <h1 class="person__name">Denis<br>Novik</h1>
@@ -53,12 +55,12 @@
                </div>
             </div>
             <div class="person__photo">
-               <img class="person__visible"src="img/BSPP2266.jpg" alt="">
+               <img class="person__visible" src="img/BSPP2266.jpg" alt="">
                <img class="person__invisible" src="img/designer.png" alt="">
             </div>
          </div>
       </section>
-      <section class="about" id="About">
+      <section class="about element-animation" id="About">
          <div class="container">
             <h2 class="title about__title">About me</h2>
             <div class="about__info">
@@ -76,7 +78,7 @@
             </div>
          </div>
       </section>
-      <section class="skills" id="Skills">
+      <section class="skills element-animation" id="Skills">
          <div class="container">
             <h2 class="skills__title title">Skills</h2>
             <span class="skills__subtitle">I work in such programs as</span>
@@ -109,22 +111,22 @@
             <h2 class="title">Portfolio</h2>
             <div class="portfolio__examples">
                <div class="portfolio__example">
-                  <img src="img/example1.jpg" alt="">
+                  <img src="img/example1.jpg" class="photo-animation" alt="">
                   <a href="#">Online fashion store - Homepage</a>
                </div>
                <div class="portfolio__example">
-                  <img src="img/example2.jpg" alt="">
+                  <img src="img/example2.jpg" class="photo-animation" alt="">
                   <a href="#">Reebok Store - Concept</a>
                </div>
                <div class="portfolio__example">
-                  <img src="img/example3.jpg" alt="">
+                  <img src="img/example3.jpg" class="photo-animation" alt="">
                   <a href="#">Braun Landing Page - Concept</a>
                </div>
             </div>
          </div>
       </section>
    </main>
-   <footer class="contacts" id="Contacts">
+   <footer class="contacts element-animation" id="Contacts">
       <div class="container">
          <div class="contacts__text">
             <h2 class="title contacts__title">Contacts</h2>
@@ -133,22 +135,22 @@
          </div>
          <div class="contacts__links">
             <a href="#">
-                  <div class="contacts__icon">
+               <div class="contacts__icon">
                   <img src="img/linked-in.png" alt="">
                </div>
             </a>
             <a href="#">
-                  <div class="contacts__icon">
+               <div class="contacts__icon">
                   <img src="img/instagram.png" alt="">
                </div>
             </a>
             <a href="#">
-                  <div class="contacts__icon">
+               <div class="contacts__icon">
                   <img src="img/behance.png" alt="">
                </div>
             </a>
-               <a href="#">
-                  <div class="contacts__icon">
+            <a href="#">
+               <div class="contacts__icon">
                   <img src="img/dribble.png" alt="">
                </div>
             </a>
@@ -160,8 +162,9 @@
             <a href="#" class="contacs__social-networks">Behance</a>
             <a href="#" class="contacs__social-networks">Dribble</a>
          </div>
-      </div> 
+      </div>
    </footer>
    <script src="js/main.min.js"></script>
 </body>
+
 </html>
