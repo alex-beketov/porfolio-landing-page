@@ -12,9 +12,9 @@ const del = require('del');
 function browsersync() {
     browserSync.init({
         server: {
-            baseDir:'app/'
+            baseDir: 'app/'
         },
-        notify:false
+        notify: false
     });
 }
 
@@ -31,11 +31,11 @@ function scripts() {
 
 function styles() {
     return src('app/scss/style.scss')
-        .pipe(scss({outputStyle: 'compressed'}))
+        .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({
             overrideBrowserslist: 'last 10 version',
-            grid:true
+            grid: true
         }))
         .pipe(dest('app/css'))
         .pipe(browserSync.stream())
@@ -54,15 +54,15 @@ function cleanDist() {
 function images() {
     return src('app/img/**/*')
         .pipe(imagemin([
-                imagemin.gifsicle({interlaced: true}),
-                imagemin.mozjpeg({quality: 75, progressive: true}),
-                imagemin.optipng({optimizationLevel: 5}),
-                imagemin.svgo({
-                    plugins: [
-                        {removeViewBox: true},
-                        {cleanupIDs: false}
-                    ]
-                })
+            imagemin.gifsicle({ interlaced: true }),
+            imagemin.mozjpeg({ quality: 75, progressive: true }),
+            imagemin.optipng({ optimizationLevel: 5 }),
+            imagemin.svgo({
+                plugins: [
+                    { removeViewBox: true },
+                    { cleanupIDs: false }
+                ]
+            })
         ]))
         .pipe(dest('dist/images'))
 }
@@ -73,7 +73,7 @@ function build() {
         'app/fonts/**/*',
         'app/js/main.min.js',
         'app/*.html'
-    ], {base: 'app'})
+    ], { base: 'app' })
         .pipe(dest('dist'))
 }
 
